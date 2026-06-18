@@ -1,0 +1,17 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import Providers from './context/composeContext.jsx'
+import { BrowserRouter } from 'react-router-dom'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+     <Providers>
+      <BrowserRouter>
+   
+        <App />
+      </BrowserRouter>
+    </Providers>
+  </StrictMode>,
+)
