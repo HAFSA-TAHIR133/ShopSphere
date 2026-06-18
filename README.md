@@ -117,7 +117,9 @@ src/
 - Login Page
 - Login with Predefine Email (hn1234@gmail.com) & Passoword(123)
 
+
 <img width="1920" height="827" alt="image" src="https://github.com/user-attachments/assets/408a1390-d54c-4ec3-b888-16c154bf2263" />
+
 
 - Home Page
 
@@ -125,22 +127,29 @@ src/
 
 - View Details Button (Show Each Product separately & allow Add To Cart)
 
+
 <img width="1920" height="1375" alt="image" src="https://github.com/user-attachments/assets/93bbad35-284e-4a80-a956-cb10e172bff1" />
 
 - Add To Cart Functionality
+
 
 <img width="944" height="439" alt="image" src="https://github.com/user-attachments/assets/d143f98f-6662-4156-9ab0-6cdb97fa2c74" />
 
 - View Cart (Navigation Item )
     Dislapy the (Added to carts products) with increase & decrease quantity functionalities too
+
+
 <img width="1920" height="1375" alt="image" src="https://github.com/user-attachments/assets/8ce93365-b343-4699-8934-20f8373b82ed" />
 
 - View User (Navigation Item with features profile & Logout)
     Currently Logout works..
+
+ 
  <img width="1920" height="827" alt="image" src="https://github.com/user-attachments/assets/ea4e5cf9-8e02-4b69-807c-c629c7d3455f" />
 
 - Cart Page
     show the Products summary whihc are Added to cart
+
 
 <img width="1920" height="1396" alt="image" src="https://github.com/user-attachments/assets/bb3fb99e-368b-4da9-9806-654e31c32582" />
 
@@ -173,4 +182,4 @@ This project helped strengthen understanding of:
 ---
 # Author
   Hafsa Tahir
-Developed as a React frontend exercise focused on production-quality architecture and user experience.
+- Developed as a React frontend exercise focused on production-quality architecture and user experience.
