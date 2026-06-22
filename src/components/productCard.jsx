@@ -53,6 +53,9 @@ function ProductCard({ item, onBack }) {
                         <span className="quantity-display">{itemQuantity}</span>
                         <button className="qty-control-btn" onClick={() => increaseQuantity(item.id)}>+</button>
                     </div> 
+                    <div className="total-price-display">
+                            Cart Total: <span>${totalPrice}</span>
+                        </div>
 
                     {/* Grouped Action Layout */}
                     <div className="action-row">
@@ -62,10 +65,11 @@ function ProductCard({ item, onBack }) {
                         >
                             Add to Cart
                         </button>
-                        <div className="total-price-display">
-                            Cart Total: <span>${totalPrice}</span>
-                        </div>
+
+                        <button  className='cont-checkout-btn' type='button'>Checkout</button>
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>

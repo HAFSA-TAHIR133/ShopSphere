@@ -185,3 +185,23 @@
     margin-top: 10px;
 }
 
+.checkout-btn button{
+    margin-top: 6px;
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    align-self: flex-start; /* Keeps the button wrapped snugly around its text */
+    box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+}
+
+.checkout-btn button:hover {
+    background-color: #76bea7;
+    box-shadow: 0 10px 15px -3px rgba(5, 150, 105, 0.3);
+    transform: translateY(-2px);
+}

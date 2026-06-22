@@ -33,6 +33,8 @@ function CartDropDown({ variant }) {
                         {!isFullPage ? (
                             <>
                                 <h3>{value.name} (x{value.quantity}): ${value.price}</h3>
+                                
+        
                             </>
                         ) : (
                             /* Full Cart Page Layout Structure */
@@ -54,6 +56,9 @@ function CartDropDown({ variant }) {
                 <span className={isFullPage ? '' : 'cart-dropdown-total-summary'}>
                     Total Price: ${totalPrice}
                 </span>
+                <div className='checkout-btn'>
+                <button  type='button'>Checkout</button>
+                </div>
             </div>
         </div>
     );
