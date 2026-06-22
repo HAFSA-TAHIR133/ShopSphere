@@ -11,14 +11,11 @@ function Cart(){
     return(
     <>
         <div className="home-layout">
-            <Navbar />
             <div className="cart-page-container">
                 <button onClick={()=> navigate(-1)}>Go Back</button>
                 <CartDropDown variant="page"/>
             </div>
 
-            {/* <Footer /> */}
-            <Footer />
         </div>
     </>
     );

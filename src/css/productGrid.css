@@ -83,11 +83,11 @@
 }
 
 /* --- INTERACTIVE ACTION BUTTON --- */
-.view-btn {
+.view-btn,.add-to-cart-btn-grid-product {
     background-color: #06b6d4;
     color: #ffffff;
     border: none;
-    padding: 10px 16px;
+    padding: 10px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -96,6 +96,9 @@
     transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
-.view-btn:hover {
-    background-color: #085563,;
+.view-btn:hover,.add-to-cart-btn-grid-product:hover {
+    background-color: #085563;
+}
+.add-to-cart-btn-grid-product{
+    margin-bottom: 10px;
 }

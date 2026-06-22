@@ -8,17 +8,16 @@ import '../css/homePage.css';
 import Footer from '../components/footer.jsx';
 
 function Home() {
-    const {selectedProduct,setSelectedProduct} =useSelectedProductContext();
+    const {selectedProduct,handleProductCardBack} =useSelectedProductContext();
     
 
     return (
         <div className="home-layout">
-            <Navbar />
             <main className="main-content-area" style={{ minHeight: '70vh' }}>
                 {selectedProduct ? (
                     <ProductCard 
                         item={selectedProduct} 
-                        onBack={() => setSelectedProduct(null)} 
+                        onBack={handleProductCardBack} 
                     />
                 ) : (
                     <div className='hero=productGrid-section'>
@@ -28,8 +27,6 @@ function Home() {
                     
                 )}
             </main>
-            {/* <Footer /> */}
-            <Footer />
         </div>
     );
 }

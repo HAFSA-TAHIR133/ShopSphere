@@ -66,3 +66,9 @@
 .login button:active {
   transform: scale(0.98);
 }
+.nav-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

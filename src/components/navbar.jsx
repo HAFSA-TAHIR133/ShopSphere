@@ -1,22 +1,27 @@
 import { Link } from "react-router-dom";
-import { useState,useEffect,useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import CartDropDown from "../components/cartDropDown";
 import UserDropDown from '../components/userDropDown';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
+import { useCartContext } from '../context/cartContext.jsx'; 
 import '../App.css';
-
 
 function Navbar() {
   const [showCart, setShowCart] = useState(false);
   const [showUser, setShowUser] = useState(false);
+  const { cartCount } = useCartContext(); 
 
   const cartRef = useRef(null);
   const userRef = useRef(null);
 
+  // 3. Calculate dynamic total price to show next to the icon
+  const navbarTotalPrice = cartCount.reduce(
+    (sum, value) => sum + parseFloat(value.price) * parseFloat(value.quantity), 0
+).toFixed(2);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
-
       if (cartRef.current && !cartRef.current.contains(event.target)) {
         setShowCart(false);
       }
@@ -44,7 +49,11 @@ function Navbar() {
 
         <div className="nav-item-wrapper" ref={cartRef}>
           <button className="nav-btn" onClick={() => setShowCart(!showCart)}>
-            <FaShoppingCart /> <span>View Cart</span>
+
+            {/* 4. Display the total price next to the cart icon here */}
+
+            <FaShoppingCart /><span>${navbarTotalPrice}</span>
+   
           </button>
           {showCart && <CartDropDown />}
         </div>

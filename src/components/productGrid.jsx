@@ -1,9 +1,14 @@
 import { products } from '../data/products.js';
 import { useSelectedProductContext } from '../context/selectedProductContext.jsx';
 import '../css/productGrid.css'
+import { useCartContext } from '../context/cartContext.jsx';
+
 
 function ProductGrid() {
-    const {selectedProduct, setSelectedProduct} =useSelectedProductContext();
+    const {handleViewDetails} =useSelectedProductContext();
+    const {handleViewBtn} = useCartContext();
+    
+    
     return (
         <div className="store-container">
             <h3 className="store-title">Available Products</h3>
@@ -15,9 +20,13 @@ function ProductGrid() {
                         </div>
                         <h4>{value.name}</h4> 
                         <p className="price">${value.price}</p>
-                        
+
+                        <button
+                        className="add-to-cart-btn-grid-product"
+                        onClick={() => handleViewBtn(value)}>Add to Cart
+                        </button>
                         {/* Trigger the parent's state change on click */}
-                        <button className="view-btn" onClick={() => setSelectedProduct(value)}>
+                        <button className="view-btn" onClick={() => handleViewDetails(value)}>
                             View Details
                         </button>
                     </div>
@@ -28,3 +37,5 @@ function ProductGrid() {
 }
 
 export default ProductGrid;
+
+
