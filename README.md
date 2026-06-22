@@ -123,12 +123,12 @@ src/
 
 - Home Page
 
-<img width="1920" height="2366" alt="image" src="https://github.com/user-attachments/assets/23d059a3-7aac-4369-842f-c34d41061210" />
+<img width="1920" height="2502" alt="image" src="https://github.com/user-attachments/assets/f1217e6d-8fff-4904-95fe-9b05d0b251cc" />
 
-- View Details Button (Show Each Product separately & allow Add To Cart)
+- View Details Button (Show Each Product separately)
 
+<img width="1920" height="1378" alt="image" src="https://github.com/user-attachments/assets/df6ce85d-d4aa-49d8-81a3-cef5405cc3d8" />
 
-<img width="1920" height="1375" alt="image" src="https://github.com/user-attachments/assets/93bbad35-284e-4a80-a956-cb10e172bff1" />
 
 - Add To Cart Functionality
 
@@ -136,10 +136,9 @@ src/
 <img width="944" height="439" alt="image" src="https://github.com/user-attachments/assets/d143f98f-6662-4156-9ab0-6cdb97fa2c74" />
 
 - View Cart (Navigation Item )
-    Dislapy the (Added to carts products) with increase & decrease quantity functionalities too
 
+<img width="399" height="181" alt="image" src="https://github.com/user-attachments/assets/b246b26f-0b80-45ba-ac75-508424d05e4b" />
 
-<img width="1920" height="1375" alt="image" src="https://github.com/user-attachments/assets/8ce93365-b343-4699-8934-20f8373b82ed" />
 
 - View User (Navigation Item with features profile & Logout)
     Currently Logout works..
@@ -148,7 +147,7 @@ src/
  <img width="1920" height="827" alt="image" src="https://github.com/user-attachments/assets/ea4e5cf9-8e02-4b69-807c-c629c7d3455f" />
 
 - Cart Page
-    show the Products summary whihc are Added to cart
+    show the Products summary which are Added to cart
 
 
 <img width="1920" height="1396" alt="image" src="https://github.com/user-attachments/assets/bb3fb99e-368b-4da9-9806-654e31c32582" />
